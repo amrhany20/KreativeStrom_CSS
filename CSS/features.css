@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'RobotoBold';
+    src: url(../fonts/Roboto-Bold.ttf), format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'RobotoLightItalic';
+    src: url(../fonts/Roboto-LightItalic.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.features-container {
+    font-family: "RobotoRegular", sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.features-title-container {
+    background-color: #1F2937;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 2%;
+}
+
+.features-title-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features-main-title {
+    font-family: "RobotoBold", sans-serif;
+    font-size: 48px;
+    color: #F9FAF8;
+    text-align: center;
+}
+
+.features-title-description {
+    font-size: 18px;
+    color: #E5E7EB;
+    text-align: center;
+}
+
+.features-benefits-container {
+    display: flex;
+    padding-top: 3%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features-benefits-cards-container {
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.features-benefits-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 2% 2% 2%;
+}
+
+.features-benefits-title,
+.features-testimonials-title {
+    font-family: "Roboto Regular", sans-serif;
+    font-size:36px;
+    color: #1F2937;
+}
+
+.benefits-image {
+    height: 9rem;
+    width: auto;
+    border: 2px solid #3882f6;
+    border-radius: 1rem;
+}
+
+.features-benefits-card-title {
+    font-size: 18px;
+    color: #1F2937;
+    max-width: 50%;
+    height: 5%;
+    text-align: center;
+}
+
+.features-benefits-card-description {
+    font-size: 18px;
+    color: #1F2937;
+    max-width: 70%;
+    text-align: justify;
+}
+
+.features-testimonials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.features-testimonials-card-elements {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.features-testimonials-card {
+    background-color: #E5E7EB;
+    padding: 8% 8% 8% 8%;
+    display: flex;
+    flex-direction: column;
+}
+
+.features-testimonials-card-description {
+    font-family: "RobotoLightItalic";
+    font-size: 36px;
+    text-align: justify;
+    color: #1F2937
+}
+
+.features-testimonials-card-title {
+    font-size: 36px;
+    color: #1F2937;
+    text-align: end;
+}
+
+.features-customer-service-container {
+    display: flex;
+    justify-content: center;
+    padding: 2% 2% 2% 2%;
+    font-size: 24px;
+}
+
+.features-customer-service-elements {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #3882F6;
+    padding: 2% 5% 2% 5%;
+    border-radius: 1rem;
+    color: #E5E7EB;
+    width: 50%;
+}
+
+.features-customer-service-title {
+    text-align: center;
+}
+
+.customer-service-contact-button {
+    background-color: #3882F6;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 2% 4% 2% 4%;
+    color: #E5E7EB;
+    font-family: "RobotoRegular";
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 800px) {
+    .features-benefits-cards-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .features-testimonials-card-description,
+    .features-testimonials-card-title {
+        font-size: 20px;
+    }
+
+    .features-customer-service-elements {
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+        font-size: 12px;
+    }
+
+    .customer-service-contact-button {
+        font-size: 12px;
+    }
+
+    .features-title-description {
+        text-align: justify;
+    }
+}
