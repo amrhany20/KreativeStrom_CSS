@@ -1,11 +1,115 @@
 @font-face {
     font-family: 'RobotoBold';
-    src: url(../fonts/Roboto-Bold.ttf);
+    src: url(../fonts/Roboto-Bold.ttf), format("truetype");
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'RobotoLightItalic';
-    src: url('../fonts/Roboto-LightItalic.ttf');
+    src: url(../fonts/Roboto-LightItalic.ttf);
     font-weight: normal;
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.features-container {
+    border: 2px solid red;
+}
+
+.features-title-container {
+    background-color: #1F2937;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 2%;
+}
+
+.features-title-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features-main-title {
+    font-family: "RobotoBold", sans-serif;
+    font-size: 48px;
+    color: #F9FAF8;
+    text-align: center;
+}
+
+.features-title-description {
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 18px;
+    color: #E5E7EB;
+    text-align: center;
+}
+
+.features-benefits-container {
+    display: flex;
+    padding-top: 3%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features-benefits-cards-container {
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.features-benefits-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 2% 2% 2%;
+}
+
+.features-benefits-title,
+.features-testimonials-title {
+    font-family: "Roboto Regular", sans-serif;
+    font-size:36px;
+    color: #1F2937;
+}
+
+.benefits-image {
+    height: 9rem;
+    width: auto;
+    border: 2px solid #3882f6;
+    border-radius: 1rem;
+}
+
+.features-benefits-card-title {
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 18px;
+    color: #1F2937;
+    max-width: 50%;
+    text-align: center;
+}
+
+.features-benefits-card-description {
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 18px;
+    color: #1F2937;
+    max-width: 70%;
+    text-align: justify;
+}
+
+.features-testimonials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 7%;
+    padding-right: 7%;
 }
