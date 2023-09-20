@@ -182,4 +182,24 @@ body {
         flex-direction: column;
         justify-content: center;
     }
+
+    .features-testimonials-card-description,
+    .features-testimonials-card-title {
+        font-size: 20px;
+    }
+
+    .features-customer-service-elements {
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+        font-size: 12px;
+    }
+
+    .customer-service-contact-button {
+        font-size: 12px;
+    }
+
+    .features-title-description {
+        text-align: justify;
+    }
 }
