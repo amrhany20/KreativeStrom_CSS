@@ -55,7 +55,7 @@ header{
     font-weight: bold;
 }
 
-  .nav-brand{
+.nav-brand{
     color:#f9faf8;
     text-decoration: none;
     size: 24px;
@@ -214,6 +214,10 @@ header{
     color: #E5E7EB;
     font-family: "RobotoRegular";
     font-size: 24px;
+}
+
+.customer-service-contact-button:hover {
+    background-color: #0b60e9;
 }
 
 @media only screen and (max-width: 800px) {
