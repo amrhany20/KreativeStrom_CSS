@@ -1,0 +1,119 @@
+.table-list {
+    list-style: none;
+}
+
+.heading-info, .currency, .duration{
+    font-size: 18px;
+}
+
+.pricing-btn a, .middle-pricing-btn a{
+    text-decoration:none ;
+}
+
+.heading-info{
+    color: #e5e7eb;
+}
+
+.general-heading{
+    color: #f9faf8;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+
+body, .single-pricing, .currency, .amount, .table-list li, .table-list{
+    position: relative;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    padding: 50px 0px;
+    overflow-x: hidden;
+}
+
+.hero {
+    padding: 50px 100px;
+    background-color: #1f2937;
+}
+
+.section-title {
+    padding: 0px 200px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.pricing {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.popular {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.single-pricing {
+    border: solid #3882f6;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 50px 40px;
+}
+
+.pricing-head h4 , .popular, .pricing-btn a{
+    color: #3882f6;
+}
+
+.currency {
+    top: -30px;
+}
+
+.amount {
+    font-size: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.table-list li {
+    font-size: 15px;
+    bottom: 6px;
+    color: #081828;
+}
+
+.table-list {
+    padding: 0px 25px;
+    margin-bottom: 50px;
+}
+
+.pricing-btn a {
+    background-color: #3882f6;
+    color: white;
+    border-radius: 45px;
+    padding: 15px 35px;
+    transition: all .3s ease;
+}
+
+.pricing-btn:hover a {
+    background-color: black;
+    color: white;
+}
+
+.middle-pricing-btn a {
+    background-color: #000000;
+    color: white;
+    border-radius: 45px;
+    padding: 15px 35px;
+    transition: all .3s ease;
+}
+
+.middle-pricing-btn:hover a {
+    background-color: #3882f6;
+    color: white;
+}
+

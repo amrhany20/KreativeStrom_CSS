@@ -10,11 +10,8 @@ html,body{
 }
 
 header{
-    padding-top: 25%;
-    width: 100%;
-    height: auto;
     background-attachment: fixed;
-    background: url(banner1.png) no-repeat;
+    background: url(/images/banner1.png) no-repeat;
     background-position-x: -100%;
     background-position-y: 100px;
     background-color: #1f2937;
@@ -22,7 +19,7 @@ header{
   }
 
 /* Navbar Styles */
-nav {
+/* nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +33,7 @@ nav {
   
   .nav-img {
     max-width: 100px; /* Set your desired max width for the logo */
-  }
+  /* } */
   
   .nav-list {
     list-style: none;
@@ -74,7 +71,7 @@ nav {
       margin-bottom: 10px; /* Add spacing between menu items */
     }
     
-  }
+  } */
   /*---------------------------------------------------------------------------*/
   
   /* Title and Header Image Styles */
@@ -102,10 +99,8 @@ nav {
   .writings {
     text-align: center;
     margin-bottom: 20px;
-    min-height: 300px;
-    max-width: 200px;
     border-radius: 20px;
-    padding: 40px 50px;
+    padding: 50px 100px;
     border-bottom: 3px solid transparent;
 
   }

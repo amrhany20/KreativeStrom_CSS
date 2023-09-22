@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title> Amr's Personal Site</title>
-  <link rel="stylesheet" href="./CSS/styles.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/nav-foot.css">
   <link rel="icon" href="favicon.ico">
 </head>
 
@@ -12,14 +13,11 @@
   <header>
   <!-- Navbar -->
   <nav>
-    <a href="index.html">
-      <img class="nav-img" src="dummy-logo.png" alt="logo_img">
-    </a>
-    <a class="nav-brand" href="index.html">Brand Name</a>
+    <a class="nav-brand" href="index.html">Straticore</a>
     <ul class="nav-list">
-      <li><a class="nav-item" href="#home">Home</a></li>
-      <li><a class="nav-item" href="#pricing">Pricing</a></li>
-      <li><a class="nav-item" href="./pages/features.html">Features</a></li>
+      <li><a class="nav-item" href="index.html">Home</a></li>
+      <li><a class="nav-item" href="pages/pricing.html">Pricing</a></li>
+      <li><a class="nav-item" href="pages/features.html">Features</a></li>
       <li><a class="nav-item" href="#contacts">Contacts</a></li>
       <li><a class="nav-item" href="#about">About Us</a></li>
     </ul>
@@ -47,37 +45,37 @@
       <div class="grid-container">
         <!-- Service Cards (you can add more as needed) -->
           <div class="single-service">
-            <img class="main-icon nav-img" src="dummy-logo.png" alt="logo_img">
+            <img class="main-icon nav-img" src="images/dummy-logo.png" alt="logo_img">
             <h4 class="text-title">Web Development</h4>
             <p class="text-secondary">Build websites and web applications using HTML, CSS, and JavaScript.</p>
           </div>
         
           <div class="single-service">
-            <img class="main-icon nav-img" src="dummy-logo.png" alt="logo_img">
+            <img class="main-icon nav-img" src="images/dummy-logo.png" alt="logo_img">
             <h4 class="text-title">Data Science and Analytics</h4>
             <p class="text-secondary">Analyze data, make predictions, and visualize insights.</p>
           </div>
         
           <div class="single-service">
-            <img class="main-icon nav-img" src="dummy-logo.png" alt="logo_img">
+            <img class="main-icon nav-img" src="images/dummy-logo.png" alt="logo_img">
             <h4 class="text-title">Cybersecurity</h4>
             <p class="text-secondary">Protect digital systems and networks from cyber threats.</p>
           </div>
         
           <div class="single-service">
-            <img class="main-icon nav-img" src="dummy-logo.png" alt="logo_img">
+            <img class="main-icon nav-img" src="images/dummy-logo.png" alt="logo_img">
             <h4 class="text-title">Mobile App Development</h4>
             <p class="text-secondary">Create apps for iOS and Android devices.</p>
           </div>
         
           <div class="single-service">
-            <img class="main-icon nav-img" src="dummy-logo.png" alt="logo_img">
+            <img class="main-icon nav-img" src="images/dummy-logo.png" alt="logo_img">
             <h4 class="text-title">Cloud Computing</h4>
             <p class="text-secondary">Manage and deploy applications in the cloud.</p>
           </div>
         
           <div class="single-service">
-            <img class="main-icon nav-img" src="dummy-logo.png" alt="logo_img">
+            <img class="main-icon nav-img" src="images/dummy-logo.png" alt="logo_img">
             <h4 class="text-title">AI and Machine Learning</h4>
             <p class="text-secondary">Develop intelligent software and predictive models.</p>
           </div>
@@ -105,7 +103,7 @@
                <q>I've gained valuable skills and insights through BRANDNAME's courses.
                 They're well-structured and up-to-date with industry trends. Highly recommend!</q> 
               <span class="author">
-              <img src="dummy-logo.png" alt="dog-profile">
+              <img src="images/dummy-logo.png" alt="dog-profile">
               <em>Sarah Johnson, New York City</em>
             </span>
             </p>
@@ -115,7 +113,7 @@
                 <q>The BRANDNAME courses are not just informative but also engaging.
                   I appreciate the practical approach, making it easier to apply what I've learned to real projects.</q> 
                 <span class="author">
-                  <img src="dummy-logo.png" alt="lady-profile">
+                  <img src="images/dummy-logo.png" alt="lady-profile">
                   <em>John Smith, San Francisco</em>
                 </span>
               </p>
@@ -125,7 +123,7 @@
                 <q>I was a complete beginner, but BRANDNAME's courses 
                   helped me transition into a tech career. The support from instructors and the community is fantastic!</q> 
                 <span class="author">
-                  <img src="dummy-logo.png" alt="lady-profile">
+                  <img src="images/dummy-logo.png" alt="lady-profile">
                   <em>Emily Davis, Chicago</em>
                 </span>
              </p>
@@ -136,7 +134,7 @@
                 , but BRANDNAME stands out. The quality of content and the 
                 interactive learning environment exceeded my expectations.</q> 
               <span class="author">
-                <img src="dummy-logo.png" alt="lady-profile">
+                <img src="images/dummy-logo.png" alt="lady-profile">
                 <em>David Lee, Los Angeles</em>
               </span>
             </p>
@@ -159,22 +157,57 @@
   <section id="contacts">
 
     <h2>What Are You Waiting For? Join Our Courses Today!</h2>
-    <img class="nav-img" src="dummy-logo.png" alt="logo_img">
+    <img class="nav-img" src="images/dummy-logo.png" alt="logo_img">
     <p>Don't miss out on our amazing tech courses. Sign up now!</p>
     <a href="#signup" class="cta-button">Start 7-day Free Trial</a>
   </section>
 
-  <!-- Footer Section -->
-  <footer id="about">
-    <div>
-      <h2>About Us</h2>
-      <!-- Add about us content here -->
-    </div>
-    <div>
-      <h2>Contact Information</h2>
-      <!-- Add contact information here -->
-    </div>
-  </footer>
+  <footer class="footer">
+        <div class="footer-container">
+            <div class="single-footer footer-content">
+                <span class="brand-name"><a href="../index.html">Straticore</a>
+                <p>Making the world a better place through constructing elegant hierarchies.</p>
+            </div>
+
+            <div class="single-footer footer-solutions">
+                <h3>Solutions</h3>
+                <ul class="single-footer-content">
+                    <li><a href="javascript:void(0)">Marketing</a></li>
+                    <li><a href="javascript:void(0)">Analytics</a></li>
+                    <li><a href="javascript:void(0)">Commerce</a></li>
+                    <li><a href="javascript:void(0)">Insights</a></li>
+                </ul>
+            </div>
+
+            <div class="single-footer footer-support">
+                <h3>Support</h3>
+                <ul class="single-footer-content">
+                    <li><a href="javascript:void(0)">Pricing</a></li>
+                    <li><a href="javascript:void(0)">Documentation</a></li>
+                    <li><a href="javascript:void(0)">Guides</a></li>
+                    <li><a href="javascript:void(0)">API Status</a></li>
+                </ul>
+            </div>
+
+
+            <div class="single-footer footer-subscribe">
+                <div class="subscribe-content">
+                    <h3>Subscribe</h3>
+                    <p>Subscribe to our newsletter for the latest updates</p>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+        <div class="copyright-area">
+            <p class="copyright-text">© 2023 - All Rights Reserved</p>
+        </div>
+    </footer>
 </body>
 
 </html>
