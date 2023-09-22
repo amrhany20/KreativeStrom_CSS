@@ -1,0 +1,139 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top:0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #1f2937;
+    z-index: 90;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+  }
+  
+  .nav-item {
+    margin-right: 20px; /* Add spacing between menu items */
+    text-decoration: none;
+    color: #f9faf8;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .nav-brand{
+    color:#f9faf8;
+    text-decoration: none;
+    font-size: 24px;
+    padding-right: auto;
+    font-weight: bold;
+}
+  
+  /* Media query for responsive design */
+
+
+  /*---------------------------------------------------------------------------*/
+
+.brand-name a{
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.footer-logo img {
+    width: 150px;
+}
+
+.footer-content p {
+    color: white;
+    margin-top: 25px;
+}
+
+.footer-content h4 {
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: inline-block;
+}
+
+.footer-subscribe {
+    padding-left: 80px;
+}
+
+.footer-solutions h3, .footer-support h3, .footer-subscribe h3 {
+    font-size: 17px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 35px;
+    color: #fff;
+}
+
+.footer-solutions li, .footer-support li {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.single-footer-content {
+    padding: 0px;
+}
+
+.single-footer-content a {
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease;
+}
+
+.single-footer-content a:hover {
+    color: #3882f6;
+}
+
+.footer-subscribe p {
+    color: white;
+    margin-bottom: 40px;
+}
+
+.input-group input {
+    background-color: #ffffff1f;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.input-group input:focus {
+    background-color: #ffffff1f;
+    border: none;
+    box-shadow: 0 0 0 0;
+    caret-color: white;
+}
+
+.input-group input::placeholder {
+    color: #737373;
+}
+
+.copyright-area{
+    display: flex;
+    justify-content: center;
+}
+
+.copyright-text {
+    color: #fff;
+    font-size: 15px;
+    transition: all .3s ease-out;
+}
+
+.footer {
+    background-color: #081828;
+    padding-top: 25px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+}
