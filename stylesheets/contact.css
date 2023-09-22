@@ -45,7 +45,7 @@ color:rgb(6, 255, 243);
 .contact-bg{
     margin: 10px 0 0 0;
     height: 40vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(image/contact-bg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../images/contact-bg.jpg);
     background-position: 50% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
