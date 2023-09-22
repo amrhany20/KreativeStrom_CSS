@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'RobotoBold';
+    src: url(../fonts/Roboto-Bold.ttf), format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'RobotoLightItalic';
+    src: url(../fonts/Roboto-LightItalic.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+/* Navbar Styles */
 nav {
     display: flex;
     justify-content: space-between;
@@ -35,15 +53,45 @@ nav {
 }
   
   /* Media query for responsive design */
+  @media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  
+    .nav-list {
+      margin-top: 10px; 
+    }
+  
+    .nav-item {
+      margin-right: 20px;
+      margin-bottom: 10px; 
+    }
+    
+  }
+  @media screen and (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        align-items: center;
+    }
 
+    }
 
   /*---------------------------------------------------------------------------*/
 
-.brand-name a{
-    font-size: 24px;
-    color: #f9faf8;
-}
+  /*---------------------------------------------------------------------------*/
+.footer{
+    box-sizing: border-box;
+    padding: 25px;
 
+}
+  .footer a{
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+ }
 .footer-logo img {
     width: 150px;
 }
@@ -91,7 +139,7 @@ nav {
 }
 
 .single-footer-content a:hover {
-    color: #3882f6;
+    color: #7e57ff;
 }
 
 .footer-subscribe p {
@@ -137,3 +185,26 @@ nav {
     display: flex;
     justify-content: space-evenly;
 }
+
+.form-control{
+    max-width: 90%;
+    width: 100%;
+    border: 1.5px solid #3882F6;
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin: 0.6rem 0;
+    font-size: 1rem;
+    outline: 0;
+}
+footer p{
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    footer input {
+       max-width: 20%;
+        
+    }
+ }
+
+

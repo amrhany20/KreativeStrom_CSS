@@ -6,43 +6,17 @@
     margin: 0;
 }
 body{
-    font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
 }
-li,a{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 500;
-    font-size: 16px;
-    color: rgb(253, 253, 253);
-    text-decoration: none;
- }
  header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
-    background-color: #1F2937;
+    width: 100%;
+    height: auto;
+    background-color: #1f2937;
  }
- .logo{
-    cursor:pointer;
-    margin-right:auto;
- }
- nav-links{
-    list-style-type: none;
- }
- 
- .nav-links li{
-    display: inline-block;
-    padding: 0px 20px;
-}
 
-.nav-links li a{
-    transition: all 0.3s ease 0s;
-}
-.nav-links li a:hover{
-color:rgb(6, 255, 243);
-}
 .contact-bg{
+    padding-top: 100px;
+    position: relative;
     margin: 10px 0 0 0;
     height: 40vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../images/contact-bg.jpg);
@@ -202,99 +176,6 @@ color:rgb(6, 255, 243);
 .social-links a:hover{
     color: rgb(9, 243, 243);
     border-color: rgb(88, 86, 97);
-}
-.footer-logo img {
-    width: 150px;
-}
-
-.footer-content p {
-    color: white;
-    margin-top: 25px;
-}
-
-.footer-content h4 {
-    color: white;
-    font-size: 16px;
-    margin-top: 20px;
-}
-
-.footer-content {
-    display: inline-block;
-}
-
-.footer-subscribe {
-    padding-left: 80px;
-}
-
-.footer-solutions h3, .footer-support h3, .footer-subscribe h3 {
-    font-size: 17px;
-    font-weight: 600;
-    display: block;
-    margin-bottom: 35px;
-    color: #fff;
-}
-
-.footer-solutions li, .footer-support li {
-    display: block;
-    margin-bottom: 15px;
-}
-
-.single-footer-content {
-    padding: 0px;
-}
-
-.single-footer-content a {
-    text-decoration: none;
-    color: white;
-    transition: all .3s ease;
-}
-
-.single-footer-content a:hover {
-    color: #7e57ff;
-}
-
-.footer-subscribe p {
-    color: white;
-    margin-bottom: 40px;
-}
-
-.input-group input {
-    background-color: #ffffff1f;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-}
-
-.input-group input:focus {
-    background-color: #ffffff1f;
-    border: none;
-    box-shadow: 0 0 0 0;
-    caret-color: white;
-}
-
-.input-group input::placeholder {
-    color: #737373;
-}
-
-.copyright-area{
-    display: flex;
-    justify-content: center;
-}
-
-.copyright-text {
-    color: #fff;
-    font-size: 15px;
-    transition: all .3s ease-out;
-}
-
-.footer {
-    background-color: #081828;
-    padding-top: 25px;
-}
-
-.footer-container{
-    display: flex;
-    justify-content: space-evenly;
 }
 
 @media screen and (min-width: 768px){

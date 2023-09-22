@@ -28,61 +28,6 @@ header{
     background-color: #1f2937;
   }
 
-/* Navbar Styles */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    position: fixed;
-    top:0;
-    width: 100%;
-    overflow: hidden;
-    background-color: #1f2937;
-    z-index: 90;
-  }
-  
-  .nav-list {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    margin-right: 20px;
-  }
-  
-  .nav-item {
-    margin-right: 20px; /* Add spacing between menu items */
-    text-decoration: none;
-    color: #f9faf8;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  .nav-brand{
-    color:#f9faf8;
-    text-decoration: none;
-    font-size: 24px;
-    padding-right: auto;
-    font-weight: bold;
-}
-  
-  /* Media query for responsive design */
-  @media screen and (max-width: 768px) {
-    nav {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .nav-list {
-      margin-top: 10px; /* Add spacing between logo/brand and menu items */
-    }
-  
-    .nav-item {
-      margin-right: 0;
-      margin-bottom: 10px; /* Add spacing between menu items */
-    }
-    
-  }
-  /*---------------------------------------------------------------------------*/
   
   /* Title and Header Image Styles */
   
@@ -132,58 +77,76 @@ nav {
   /* Media query for responsive design */
   @media screen and (min-width: 768px) {
     .banner {
-      flex-direction: row; /* Revert to the original order of content and image */
-      text-align: left; /* Align content to the left on larger screens */
+      flex-direction: row; 
+      text-align: left;
     }
   
     .row {
-      flex-direction: row; /* Revert to the original order of content and image */
-      align-items: center; /* Align content to the center vertically */
+      flex-direction: row; 
+      align-items: center; 
     }
   
     .writings {
-      margin-right: 20px; /* Add spacing between content and image */
-      text-align: left; /* Align content to the left on larger screens */
+      margin-right: 20px; 
+      text-align: left; 
     }
   }
+  @media screen and (max-width: 768px) {
+    .banner {
+        flex-direction: column-reverse;
+        text-align: center;
+        
+    }
+    .banner-img{
+      display: none;
+    }
+    .writings{
+      max-width: 100%;
+    }
+
+}
+
   
 
   /*-------------------------------------------------------*/
   /* Our Courses Section Styles */
- .services {
+  .services {
     padding: 40px 0;
     text-align: center;
-  }
- .section-title {
-    padding: 0px 200px;
-    margin-bottom: 50px;
+    /* Add responsive adjustments here as needed */
+}
+
+.section-title {
+    padding: 0px 20px; /* Reduce the padding for smaller screens */
+    margin-bottom: 30px; /* Adjust margin for smaller screens */
     text-align: center;
 }
 
-  .general-heading {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .heading-info {
-    font-size: 18px;
-  }
-  
-  /* Service Card Styles */
-  .grid-container{
+.general-heading {
+    font-size: 24px; /* Decrease font size for smaller screens */
+    margin-bottom: 15px; /* Adjust margin for smaller screens */
+}
+
+.heading-info {
+    font-size: 16px; /* Decrease font size for smaller screens */
+}
+
+/* Service Card Styles */
+.grid-container {
     justify-content: center;
-    padding: 0% 10% 0% 10%;
+    padding: 0% 5%; /* Adjust padding for smaller screens */
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Create a 3-column grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
     grid-gap: 20px; /* Add spacing between grid items */
-  }
-  .single-service {
+}
+
+.single-service {
     min-height: 300px;
-    margin-top: 30px;
+    margin-top: 20px; /* Reduce margin for smaller screens */
     border-radius: 20px;
     background-color: #f9faf8;
-    box-shadow: 0 0 30px rgb(81 94 125 / 8%);
-    padding: 40px 50px;
+    box-shadow: 0 0 20px rgba(81, 94, 125, 0.2); /* Slightly reduce shadow for smaller screens */
+    padding: 30px; /* Adjust padding for smaller screens */
     text-align: center;
     transition: all .3s ease;
     border-top: 3px solid transparent;
@@ -198,26 +161,28 @@ nav {
 
 .single-service p {
     color: #1f2937;
+    font-size: 16px; /* Decrease font size for smaller screens */
 }
 
 .main-icon {
-    padding: 15px 10px;
+    padding: 10px;
     border-radius: 10px;
-    width: 65px;
-    height: 65px;
+    width: 55px; /* Reduce icon size for smaller screens */
+    height: 55px; /* Reduce icon size for smaller screens */
     background-color: #3882f6;
     color: rgb(255, 255, 255);
-    margin-right: 0px;
     text-align: center;
     display: inline-block;
-    margin-bottom: 35px;
-    font-size: 25px;
+    margin-bottom: 20px; /* Adjust margin for smaller screens */
+    font-size: 20px; /* Decrease font size for smaller screens */
 }
 
 .text-title {
-    font-size: 20px;
-    margin-bottom: 17px;
+    font-size: 18px; /* Decrease font size for smaller screens */
+    margin-bottom: 15px; /* Adjust margin for smaller screens */
 }
+
+/* Add more responsive adjustments as needed */
 
 /*------------------------------*/
 /* Testimonial Styles  */
@@ -356,12 +321,24 @@ nav {
     }
   }
 
-  /* Call to Action, and Footer Styles (modify as needed) */
-  #features, #contacts, #about {
-    padding: 40px 0;
-    text-align: center;
-  }
-  
+  /* Call to Action*/
+  /* Contacts Section Styles */
+#contacts {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px; /* Adjust font size for smaller screens */
+  margin-bottom: 20px; /* Adjust margin for smaller screens */
+}
+
+.section-description {
+  font-size: 18px; /* Adjust font size for smaller screens */
+  margin-bottom: 30px; /* Adjust margin for smaller screens */
+}
+
+
   .cta-button {
     display: inline-block;
     padding: 10px 20px;
@@ -371,103 +348,3 @@ nav {
     border-radius: 5px;
     font-weight: bold;
   }
-  #about{
-    background-color: #1f2937;
-    color: #e5e7eb;
-  }
-
-  /*footer Styles*/
-
-.footer-content p {
-    color: white;
-    margin-top: 25px;
-}
-
-.footer-content h4 {
-    color: white;
-    font-size: 16px;
-    margin-top: 20px;
-}
-
-.footer-content {
-    display: inline-block;
-}
-
-.footer-subscribe {
-    padding-left: 80px;
-}
-
-.footer-solutions h3, .footer-support h3, .footer-subscribe h3 {
-    font-size: 17px;
-    font-weight: 600;
-    display: block;
-    margin-bottom: 35px;
-    color: #fff;
-}
-
-.footer-solutions li, .footer-support li {
-    display: block;
-    margin-bottom: 15px;
-}
-
-.single-footer-content {
-    padding: 0px;
-}
-
-.single-footer-content a {
-    text-decoration: none;
-    color: white;
-    transition: all .3s ease;
-}
-
-.single-footer-content a:hover {
-    color: #7e57ff;
-}
-
-.footer-subscribe p {
-    color: white;
-    margin-bottom: 40px;
-}
-
-.input-group input {
-    background-color: #ffffff1f;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-}
-
-.input-group input:focus {
-    background-color: #ffffff1f;
-    border: none;
-    box-shadow: 0 0 0 0;
-    caret-color: white;
-}
-
-.input-group input::placeholder {
-    color: #737373;
-}
-
-.copyright-area{
-    display: flex;
-    justify-content: center;
-}
-
-.copyright-text {
-    color: #fff;
-    font-size: 15px;
-    transition: all .3s ease-out;
-}
-
-.footer {
-    background-color: #081828;
-    padding-top: 25px;
-}
-
-.footer-container{
-    display: flex;
-    justify-content: space-evenly;
-}
-  
-  /* Add more styles as needed */
-  /* ... (Previous CSS Rules) ... */
- 
