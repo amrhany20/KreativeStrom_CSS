@@ -10,15 +10,9 @@ html,body{
 }
 
 header{
-    padding-top: 25%;
     width: 100%;
     height: auto;
-    background-attachment: fixed;
-    background: url(banner1.png) no-repeat;
-    background-position-x: -100%;
-    background-position-y: 100px;
     background-color: #1f2937;
-    background-size: cover;
   }
 
 /* Navbar Styles */
@@ -80,15 +74,26 @@ nav {
   /* Title and Header Image Styles */
   
   .banner {
+    width: 100%;
+    justify-content: space-between;
     position:relative;
     overflow:hidden;
     display: flex;
     flex-direction: column-reverse; /* Reverses the order of image and content on smaller screens */
-    padding: 20px;
-    text-align: center; /* Center-align content on smaller screens */
-  
-    /* You can set a background image here instead of a color if desired */
+    text-align: center;
+    padding-top: 20px;
   }
+  
+  .banner-img{
+    max-width: 70%;
+    margin-left: 50px;
+ 
+  }
+  .banner img{
+    height: 100%;
+    width: 100%;
+  }
+
   .h1{
     font-size: 48px;
     font-weight: bolder;
