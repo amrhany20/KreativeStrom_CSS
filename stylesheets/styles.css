@@ -16,6 +16,10 @@
     src: url(../fonts/Roboto-Regular.ttf);
 }
 
+body{
+    font-family: "RobotoRegular";
+}
+
 html,body{
     margin: 0;
     padding: 0;
@@ -40,6 +44,7 @@ header{
     flex-direction: column-reverse; /* Reverses the order of image and content on smaller screens */
     text-align: center;
     padding-top: 20px;
+    background-color: #1f2937;
   }
   
   .banner-img{
@@ -117,9 +122,9 @@ header{
 }
 
 .section-title {
-    padding: 0px 20px; /* Reduce the padding for smaller screens */
-    margin-bottom: 30px; /* Adjust margin for smaller screens */
+    padding: 20px 20px; /* Reduce the padding for smaller screens */
     text-align: center;
+    font-size: 28px;
 }
 
 .general-heading {
@@ -141,7 +146,6 @@ header{
 }
 
 .single-service {
-    min-height: 300px;
     margin-top: 20px; /* Reduce margin for smaller screens */
     border-radius: 20px;
     background-color: #f9faf8;
@@ -202,8 +206,6 @@ header{
   /*Carousel*/
   .carrousel {
     text-align: center;
-    padding: 4em 0;
-    height: 7.5em;
     max-width: 750px;
     margin: auto;
     position: relative;
@@ -221,7 +223,6 @@ header{
     width: 400%;
     left: 0;
     padding-left: 0;
-    padding-top: 1em;
     overflow: hidden;
     list-style: none;
     position: relative;
@@ -256,7 +257,7 @@ header{
     display: block;
     list-style: none;
     text-align: center;
-    bottom: 1em;
+    bottom: 0em;
     position: absolute; 
       width: 104px;
       left: 50%; 
@@ -328,11 +329,6 @@ header{
   text-align: center;
 }
 
-.section-title {
-  font-size: 28px; /* Adjust font size for smaller screens */
-  margin-bottom: 20px; /* Adjust margin for smaller screens */
-}
-
 .section-description {
   font-size: 18px; /* Adjust font size for smaller screens */
   margin-bottom: 30px; /* Adjust margin for smaller screens */
@@ -348,3 +344,65 @@ header{
     border-radius: 5px;
     font-weight: bold;
   }
+
+
+.features-customer-service-container {
+    display: flex;
+    justify-content: center;
+    padding: 2% 2% 2% 2%;
+    font-size: 24px;
+}
+
+.features-customer-service-elements {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #3882F6;
+    padding: 2% 5% 2% 5%;
+    border-radius: 1rem;
+    color: #E5E7EB;
+    width: 50%;
+}
+
+.features-customer-service-title {
+    text-align: center;
+}
+
+.customer-service-contact-button {
+    background-color: #3882F6;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 2% 4% 2% 4%;
+    color: #E5E7EB;
+    font-family: "RobotoRegular";
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 800px) {
+    .features-benefits-cards-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .features-testimonials-card-description,
+    .features-testimonials-card-title {
+        font-size: 20px;
+    }
+
+    .features-customer-service-elements {
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+        font-size: 12px;
+    }
+
+    .customer-service-contact-button {
+        font-size: 12px;
+    }
+
+    .features-title-description {
+        text-align: justify;
+    }
+}
