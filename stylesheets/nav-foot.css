@@ -111,10 +111,6 @@ nav {
     display: inline-block;
 }
 
-.footer-subscribe {
-    padding-left: 80px;
-}
-
 .footer-solutions h3, .footer-support h3, .footer-subscribe h3 {
     font-size: 17px;
     font-weight: 600;
@@ -139,7 +135,7 @@ nav {
 }
 
 .single-footer-content a:hover {
-    color: #7e57ff;
+    color: #3882f6;
 }
 
 .footer-subscribe p {
